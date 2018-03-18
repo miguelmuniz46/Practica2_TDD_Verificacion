@@ -21,8 +21,8 @@ You can execute the program using the next command:
 ```bash
 python main.py <param1>
 
-python main.py abc def
-# abcdef 
+python main.py "hola me llamo Juan"
+# [('Juan', 1), ('llamo', 1), ('hola', 1)] 
 ```
 
 # Version de python
