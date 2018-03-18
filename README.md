@@ -19,7 +19,7 @@ make test
 You can execute the program using the next command:
 
 ```bash
-python main.py <param1> <param2>
+python main.py <param1>
 
 python main.py abc def
 # abcdef 
