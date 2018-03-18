@@ -64,12 +64,12 @@ class TestStringsExamples(unittest.TestCase):
         assert result == [('espacio', 2), ('tenga', 1), ('texto', 1), ('prueba', 1)]
 
     def test_count_words_with_rare_caracters(self):
-        string = "El texto ## #tiene %carateres !raros"
+        string = "El texto .. .tiene .carateres !raros"
         result = StringsExamples.count_words(string)
         assert result == [('raros', 1), ('carateres', 1), ('tiene', 1), ('texto', 1)]
 
     def test_count_words_with_rare_caracters_two(self):
-        string = "  EL texto €€   (TiEnE =carateres    raROS?¿  "
+        string = "  EL texto €€   (TiEnE .carateres    raROS?¿  "
         result = StringsExamples.count_words(string)
         assert result == [('raros', 1), ('carateres', 1), ('tiene', 1), ('texto', 1)]
 
