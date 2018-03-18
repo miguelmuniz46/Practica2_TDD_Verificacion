@@ -44,9 +44,9 @@ class TestStringsExamples(unittest.TestCase):
         assert result == [('chicos', 2), ('canicas', 1), ('mientras', 1), ('futbol', 1), ('juegan', 1)]
 
     def test_count_words_without_punt(self):
-        string = "Los chicos de mi clase estudian inglés, los chicos de segundo francés, y los chicos de tercero italiano."
+        string = "Los chicos de mi clase estudian ingles, los chicos de segundo frances, y los chicos de tercero italiano."
         result = StringsExamples.count_words(string)
-        assert result == [('chicos', 3), ('italiano', 1), ('tercero', 1), ('francés', 1), ('segundo', 1), ('inglés', 1), ('estudian', 1), ('clase', 1)]
+        assert result == [('chicos', 3), ('italiano', 1), ('tercero', 1), ('frances', 1), ('segundo', 1), ('ingles', 1), ('estudian', 1), ('clase', 1)]
 
     def test_count_words_start_with_space(self):
         string = " La prueba de que el texto empiece por un espacio espacio"
