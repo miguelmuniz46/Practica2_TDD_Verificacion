@@ -59,7 +59,7 @@ class TestStringsExamples(unittest.TestCase):
         assert result == [('espacio', 2), ('termine', 1), ('texto', 1), ('prueba', 1)]
 
     def test_count_words_more_than_one_space(self):
-        string = "La prueba    de         que  el    texto    tenga  más de un           espacio                espacio"
+        string = "La prueba    de         que  el    texto    tenga  mas de un           espacio                espacio"
         result = StringsExamples.count_words(string)
         assert result == [('espacio', 2), ('tenga', 1), ('texto', 1), ('prueba', 1)]
 
@@ -76,6 +76,6 @@ class TestStringsExamples(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-#venv/bin/  coverage run main.py "hola soy el cejas"
+#venv/bin/  coverage run main.py "hola"
 
 #venv/bin/  coverage report
